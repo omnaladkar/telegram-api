@@ -7,9 +7,9 @@ const bot_id = process.env.TELEGRAM_CHAT_ID;
 const weatherToken = process.env.WEATHER_API_TOKEN;
 
 const weatherURL = new URL('https://api.openweathermap.org/data/2.5/weather');
-weatherURL.searchParams.set('id', '1273294'); //setting city id of delhi, which is 1273294
-weatherURL.searchParams.set('APPID', weatherToken);  //set apikey
-weatherURL.searchParams.set('units', 'metric'); // units converted
+weatherURL.searchParams.set('id', '1273294'); 
+weatherURL.searchParams.set('APPID', weatherToken);  
+weatherURL.searchParams.set('units', 'metric'); 
 
 const getWeatherData = async () => {
   console.log(weatherURL.toString());
